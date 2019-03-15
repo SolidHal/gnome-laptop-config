@@ -1,0 +1,15 @@
+# Install xbindkeys, and place this in your home dir
+# Button 10 closes a tab
+"xvkbd -text '\Cw'"  # Sends Ctrl-w
+b:10
+
+
+# Button 8 sends Control + PageDown
+# switches to left tab
+"xvkbd -text '\C\[Next]'" # Sends Ctrl-PgDn
+b:8
+
+# Button 9 sends Control + PageUp
+# switches to right tab
+"xvkbd -text '\C\[Prior]'" # Sends Ctrl-PgUp
+b:9

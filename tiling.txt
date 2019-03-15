@@ -1,0 +1,10 @@
+shellshape extension:
+11 px between windows
+9px around screen edge
+
+gtile extension:
+10px window margin
+18px around all sides primary
+
+
+For better browser support, install Dynamic Zoom by ingolemo so that windows stay a certain width

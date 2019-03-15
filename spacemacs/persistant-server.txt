@@ -1,0 +1,12 @@
+To use spacemacs quickly from the terminal like nano or vim, you need to daemonize it.
+em.sh <filename> will open spacemacs in the terminal, and start a background daemon if necessary.
+If no file is given, it will open to scratch
+
+rebind space q q to kill the frame instead of the server by putting this int .spacemacs user-config
+
+
+  (evil-leader/set-key "q q" 'spacemacs/frame-killer)
+
+spacemacs server/daemon can then be killed with space q Q
+
+alias em.sh to em for ease of use and throw em.sh into /usr/local/bin

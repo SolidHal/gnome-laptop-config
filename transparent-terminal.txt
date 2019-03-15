@@ -1,0 +1,23 @@
+At some point Gnome (or rather, libvte, on which gnome-terminal is based) removed transparency b/c maintaining it was too burdensome, or something like that. So it is gone from Debian 8.
+
+I recommend installing the devilspie2 package.
+
+Put the following into ~/.config/devilspie2/gnome-terminal.lua:
+
+if (get_window_class()=="Gnome-terminal") then
+   set_opacity(0.95);
+end
+
+Then put the following into ~/.config/autostart/devilspie2.desktop:
+
+[Desktop Entry]
+Name=Devilspie2
+Type=Application
+TryExec=devilspie2
+Exec=devilspie2
+StartupNotify=false
+Terminal=false
+
+Re-login and enjoy. Tweak the opacity value from 0 to 1 to taste. (You can kill the devilspie2 process and run it from the terminal to test configurations.)
+
+Then start learning devilspie2 (and Lua scripting) b/c you can now start messing w/ transparency and a tonne of other window features programmatically for any X program.

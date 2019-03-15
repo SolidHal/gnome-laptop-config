@@ -1,0 +1,13 @@
+scaling set to 200%
+gtk theme set to flat-remix darker
+shell theme set to flat-remix darkest fullpanel
+
+extensions:
+full dash to dock installed
+auto move windows
+remove accessibility
+user themes
+gtile
+shellshape
+
+
