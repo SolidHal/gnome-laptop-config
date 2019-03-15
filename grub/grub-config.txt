@@ -1,0 +1,15 @@
+
+used this theme poly dark https://www.gnome-look.org/p/1230780/
+
+import the customized archive into grub customizer
+customized to include my wallpaper, larger font, and remove key hint
+
+
+used grub customizer to set a custom resolution of 3000x2000 and to swap out background.png with a different wallpaper.
+
+to crop the wallpaper to fit the laptop, this command can be used
+
+
+convert -define jpeg:size=4240x2124 original.jpg -thumbnail 3000x2000^           -gravity center -extent 3000x2000  cut_to_fit_output.png
+
+size= is the size of the original, the two 3000x2000 are the size of the output
