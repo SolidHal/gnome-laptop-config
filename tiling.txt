@@ -1,6 +1,8 @@
 shellshape extension:
 11 px between windows
-9px around screen edge
+12px around screen edge
+
+with source code pro font/custome gnome terminal profile
 
 gtile extension:
 10px window margin
