@@ -1,5 +1,5 @@
 shellshape extension:
-11 px between windows
+8 px between windows
 12px around screen edge
 
 with source code pro font/custome gnome terminal profile
