@@ -1,0 +1,38 @@
+
+install the modified breeze-neon plymouth theme like this:
+
+Installing a new theme
+
+Easy if it's packaged - sudo apt install
+
+Otherwise you need to copy its folder or extract its archive to /usr/share/plymouth/themes. Then you need to install it...
+
+sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/THEME/THEME.plymouth 100
+
+...replacing THEME with the theme name.
+
+NEXT:
+Choosing the theme
+
+sudo update-alternatives --config default.plymouth
+sudo update-initramfs -u
+
+Testing
+
+You can also test Plymouth without rebooting...
+
+sudo apt install plymouth-x11
+
+sudo plymouthd ; sudo plymouth --show-splash ; for ((I=0; I<10; I++)); do sleep 1 ; sudo plymouth --update=test$I ; done ; sudo plymouth --quit
+
+
+FINALLY: to remove the purple flash before and after grub, do
+
+sudo nano /usr/share/plymouth/themes/ubuntu-logo/ubuntu-logo.grub
+
+and set it to be this:
+
+if background_color 0,0,0,0; then
+  clear
+fi
+

@@ -1,3 +1,7 @@
+remove ubuntu logo from login screen 
+
+sudo mv /usr/share/plymouth/ubuntu-logo.png /usr/share/plymouth/ubuntu-logo.png.bak
+
 scaling set to 200%
 gtk theme set to flat-remix darker
 shell theme set to flat-remix darkest fullpanel
