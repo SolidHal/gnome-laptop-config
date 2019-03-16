@@ -15,3 +15,24 @@ gtile
 shellshape
 
 
+Set login image and lock image to be the same:
+
+set /usr/share/gnome-shell/theme/ubuntu.css
+
+to 
+
+#lockDialogGroup {
+  background: #2c001e url(file:///usr/share/gnome-shell/theme/assets/login-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ }
+
+and set /usr/share/gnome-shell/theme/gdm3.css
+
+
+#lockDialogGroup {
+  background: url("assets/login-background.jpg");
+  background-size: cover; }
+
+then copy your image to /usr/share/gnome-shell/theme/assets/login-background.jpg
