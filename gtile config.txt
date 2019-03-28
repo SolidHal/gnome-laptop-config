@@ -1,0 +1,12 @@
+cmd + (qwer) : to switch workspaces
+	in gnome settings
+cmd + (left right) tile left, right
+2x2 0:0 0:1
+2x2 1:0 1:1
+cmd + (up down) tile upper half, lower half
+2x2 0:0 1:0
+2x2 0:1 1:1
+cmd + shift + up : maximize
+2x2 0:0 1:1
+
+Disable the tiling built into gnome settings, hotkey switching in dash to dock
